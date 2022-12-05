@@ -8,23 +8,23 @@
 #include <iostream>
 using namespace std;
 
-laiks::laiks(int a, int b, int c) {//Funkcija kas nosaka laiku
+laiks::laiks(int a, int b, int c) {//metode konstruktors
     stunda = a;
     minute = b;
     sekunde = c;
 }
 
-void laiks::mainit(int a, int b, int c) {//Funkcija kas maina laiku
+void laiks::mainit(int a, int b, int c) {//metode kas maina laiku
     stunda = a;
     minute = b;
     sekunde = c;
 }
 
-void laiks::drukat() { //Funkcija kas izdrukā laiku
+void laiks::drukat() { //metode kas izdrukā laiku
     cout << "Laiks ir: " << stunda << ":" << minute << ":" << sekunde << endl;
 }
 
-void laiks::aprekinat() { //Funkcija kas aprēķina attālumu no diennakts sākuma minūtēs un sekundēs
+void laiks::aprekinat() { //metode kas aprēķina attālumu no diennakts sākuma minūtēs un sekundēs
     bool nakts = false;
     if(stunda < 7 || stunda > 22){
         nakts = true;
@@ -38,6 +38,6 @@ void laiks::aprekinat() { //Funkcija kas aprēķina attālumu no diennakts sāku
         cout <<"Ir diena, "<<"Attālums no diennakts sākuma sekundēs ir: "<<slaiks<<endl<<"Attālums no diennakts sākuma minūtēs ir: "<<mlaiks<<endl;
     }
 }
-laiks::~laiks() { //
+laiks::~laiks() { //metode destruktors
     cout << "Objekts likvidēts" << endl;
 }

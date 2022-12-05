@@ -2,7 +2,7 @@
 #include "program.h"
 using namespace std;
 
-int main() { //Funkciju izsaukšana
+int main() {
     laiks abc(3, 14, 25);
     abc.drukat();
     abc.aprekinat();
