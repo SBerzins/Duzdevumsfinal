@@ -1,9 +1,12 @@
 // Sandis Bērziņš, sb22063. D14.
-// D14. Izveidot klasi "Laiks" - Time, kurā tiek glabāti trīs skaitļi - stunda, minūte, sekunde.
-// Klasei izveidot šādas metodes: (1) konstruktors, ar kuru tiek padotas sākotnējās vērtības, (2) destruktors, kurš paziņo par objekta likvidēšanu,
-// (3) metode "Mainīt" - change ar trīs parametriem, kas uzstāda jaunās vērtības, (4) metode "Drukāt" - print, kas izdrukā laiku,
+// D14. Izveidot klasi "Laiks" - Time, kurā tiek glabāti trīs skaitļi - stunda, minūte, sekunde. Klasei izveidot šādas metodes:
+// (1) konstruktors, ar kuru tiek padotas sākotnējās vērtības,
+// (2) destruktors, kurš paziņo par objekta likvidēšanu,
+// (3) metode "Mainīt" - change ar trīs parametriem, kas uzstāda jaunās vērtības,
+// (4) metode "Drukāt" - print, kas izdrukā laiku,
 // (5) metode "Aprēķināt" - calculate, kas izdrukā attālumu sekundēs no diennakts sākuma,
-// attālumu minūtēs no diennakts sākuma un statusu (nakts vai diena - robežu noteikšana ir autora ziņā). Programma izveidota 05.12.2022
+// attālumu minūtēs no diennakts sākuma un statusu (nakts vai diena - robežu noteikšana ir autora ziņā).
+// Programma izveidota 05.12.2022
 #include "program.h"
 #include <iostream>
 using namespace std;
@@ -41,3 +44,11 @@ void laiks::aprekinat() { //metode kas aprēķina attālumu no diennakts sākuma
 laiks::~laiks() { //metode destruktors
     cout << "Objekts likvidēts" << endl;
 }
+
+/************** Testu plāns **************************
+Ievade           Paredzemais rezeultāts
+3 14 25            Ir nakts, Attālums no diennakts sākuma sekundēs ir: 11665
+                   Attālums no diennakts sākuma minūtēs ir 194
+10 17 48           Ir diena/ Attālums no diennakts sākuma sekundēs ir: 37068
+                   Attālums no diennakts sākuma minūtēs ir: 617
+******************************************************/
